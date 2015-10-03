@@ -7,10 +7,12 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: Vollkorn, Cambria, serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
+
+img { max-width: 100%; }
 
 /*  #container div (below) wraps all content below the image
     2% - top and bottom margins
@@ -48,7 +50,7 @@ aside {
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family: 'Fjalla One', Calibri, sans-serif; /*   add fonts here   */
 }
 
 article h1 {
@@ -111,3 +113,23 @@ aside a:focus, aside a:hover {
 }
 
 /* media queries */
+@media screen and (min-width: 480px;) {
+	body { 
+	margin: 0;
+	display: none;
+
+}
+	#container { border-width: 0; }
+	
+	article {
+    width: auto;
+    float: none;
+}
+	aside {
+    width: auto;
+    float: none;
+}
+	#sidebar2 {
+    float: none;
+}
+}
